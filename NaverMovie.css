@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/* Material Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+	/* font-awsome v6.2.0 */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+ul,li{ list-style: none; }
+a{ text-decoration: none; }
+body{ min-width: 1280px; 
+    background: #202020;}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+nav > .inner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav .inner .logo{
+    width: 251px;
+    height: 42px;
+    cursor: pointer;
+}
+nav > .inner ul.gnb{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 0 0 0 120px;
+    gap: 50px;
+}
+nav > .inner ul.gnb > li{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 320;
+    margin: 0 20px;
+}
+nav > .inner ul.gnb > li:hover{
+    color: #03FC5D;
+    cursor: pointer;
+}
+nav > .inner ul.gnb > li:nth-child(1){
+    color: #03FC5D;
+}
+/* snb */
+nav .snb{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+}
+nav:hover .snb{
+    background: rgba(32,32,32,0.95);
+    height: 145px;
+    transition: height 0.5s;
+}
+nav .snb > .inner{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: #FFF;
+}
+
+nav .snb > .inner ul{
+    width: 120px;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+nav .snb > .inner ul:nth-child(4){
+    margin: 20px 55px 0 62px;
+}
+nav .snb > .inner ul:nth-child(3){
+    margin: 20px 0px 0 85px;
+}
+nav .snb > .inner ul:nth-child(2){
+    margin: 20px 0px 0 43px;
+}
+nav .snb > .inner ul:first-child{
+    margin: 20px 10px 0 0 ;
+}
+nav .snb > .inner ul li{
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+nav .snb > .inner ul li:hover{
+    color:#03FC5D;
+    cursor: pointer;
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    flex-flow: column nowrap;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
