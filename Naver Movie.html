@@ -6,49 +6,280 @@
         <meta name="robots" content="noindex">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" type="text/css" href="NaverMovie.css">
+        <link rel="stylesheet" media="all and (max-width: 1024px)" href="./NaverMovieT.css" />
+        <link rel="stylesheet" media="all and (max-width: 640px)" href="./NaverMovieM.css" />
         <title>Naver Movie</title>
     </head>
     <body>
         <nav>
             <div class="inner">
-                <img src="./로고/navermovie.png" alt="navermoivelogo" class="logo">
-                <ul class="gnb">
-                    <li>홈</li>
-                    <li class="mgnb" data-id="snb1">랭킹</li>
-                    <li class="mgnb" data-id="snb2">현재상영작</li>
-                    <li class="mgnb" data-id="snb3">상영예정작</li>
-                    <li class="mgnb" data-id="snb4">콘텐츠</li>
-                </ul>
-            </div>
-            <div class="snb">
-                <div class="inner">
-                    <ul class="msnb" id="snb1">
+                <div class="nav">
+                    <img src="./로고/navermovie.png" alt="navermoivelogo" class="logo">
+                    <ul class="navtitle">
+                        <li>홈</li>
+                        <li>랭킹</li>
+                        <li>현재상영작</li>
+                        <li>상영예정작</li>
+                        <li>콘텐츠</li>
+                    </ul>
+                </div>
+                <div class="navsub">
+                    <ul class="sub1">
                         <li>예매순위</li>
                         <li>박스오피스</li>
                         <li>OTT</li>
                     </ul>
-                    <ul class="msnb" id="snb2">
+                    <ul class="sub2">
                         <li>영화관</li>
                         <li>넷플릭스</li>
                         <li>왓챠</li>
                     </ul>
-                    <ul class="msnb" id="snb3">
+                    <ul class="sub3">
                         <li>영화관</li>
                         <li>넷플릭스</li>
                         <li>왓챠</li>
                     </ul>
-                    <ul class="msnb" id="snb4">
+                    <ul class="sub4">
                         <li>영화뉴스</li>
-                        <li>매거진</li>
                         <li>평점·리뷰</li>
                     </ul>
                 </div>
             </div>
         </nav>
         <main>
-            <section>
-                
+            <section class="sec1">
+                <h1>예매랭킹</h1>
+                <div class="ranking">
+                    <img src="./영화슬라이드/인생은아름다워.jpg" alt="LifeisBeautiful" class="poster">
+                    <ul class="rankinglist">
+                        <li><b>1</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>2</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>3</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>4</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>5</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>6</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>7</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>8</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>9</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                        <li><b>10</b><p>인생은 아름다워</p><img src="./관람가등급/Untitled-1.png" alt="전체관람가" class="grade"><div class="up">2<i class="fa-solid fa-chevron-up"></i></div></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="sec2">
+                <h1>현재상영작</h1>
+                <div class="tomovielist">
+                    <div class="tomoviecard1">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="tosmallposter1">
+                        <div class="moviecard1title">인생은 아름다워</div>
+                        <div class="movie1score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="tomoviecard2">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="tosmallposter2">
+                        <div class="moviecard2title">인생은 아름다워</div>
+                        <div class="movie2score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="tomoviecard3">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="tosmallposter3">
+                        <div class="moviecard3title">인생은 아름다워</div>
+                        <div class="movie3score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="tomoviecard4">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="tosmallposter4">
+                        <div class="moviecard4title">인생은 아름다워</div>
+                        <div class="movie4score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="tomoviecard5">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="tosmallposter5">
+                        <div class="moviecard5title">인생은 아름다워</div>
+                        <div class="movie5score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+            <section class="sec2">
+                <h1>상영예정작</h1>
+                <div class="exmovielist">
+                    <div class="exmoviecard1">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="exsmallposter1">
+                        <div class="moviecard3title">인생은 아름다워</div>
+                        <div class="movie3score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="exmoviecard2">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="exsmallposter2">
+                        <div class="moviecard3title">인생은 아름다워</div>
+                        <div class="movie3score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="exmoviecard3">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="exsmallposter3">
+                        <div class="moviecard3title">인생은 아름다워</div>
+                        <div class="movie3score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="exmoviecard4">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="exsmallposter4">
+                        <div class="moviecard3title">인생은 아름다워</div>
+                        <div class="movie3score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <div class="exmoviecard5">
+                        <img src="./영화슬라이드/인생은아름다워.jpg" alt="인생은아름다워" class="exsmallposter5">
+                        <div class="moviecard3title">인생은 아름다워</div>
+                        <div class="movie3score"><i class="fa-solid fa-star"></i><div class="score">9.36</div> <span>예매율</span> <div class="number">12.5%</div></div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </section>
+            <section class="sec3">
+                <div class="sec3L">
+                    <h1>영화리뷰 · 평점</h1>
+                    <div class="sec3Lhover">
+                        <div class="sec3LhoverL">
+                            <img src="./영화슬라이드/인생은아름다워.jpg" alt="Hoverposter" class="hoverposter">
+                        </div>
+                        <div class="sec3LhoverR">
+                            <div class="reviewtitle">인생은 아름다워<div class="titlescore"><i class="fa-solid fa-star"></i>9.36</div></div>
+                            <ul>
+                                <li><div class="review">· 참 따뜻하고 익히 아는 음악과함께 옛생각도 나는 고마운 영화입니다</div><div class="reviewscore"><i class="fa-solid fa-star"></i>9.36</div></li>
+                                <li><div class="review">· 참 따뜻하고 익히 아는 음악과함께 옛생각도 나는 고마운 영화입니다</div><div class="reviewscore"><i class="fa-solid fa-star"></i>9.36</div></li>
+                                <li><div class="review">· 참 따뜻하고 익히 아는 음악과함께 옛생각도 나는 고마운 영화입니다</div><div class="reviewscore"><i class="fa-solid fa-star"></i>9.36</div></li>
+                                <li><div class="review">· 참 따뜻하고 익히 아는 음악과함께 옛생각도 나는 고마운 영화입니다</div><div class="reviewscore"><i class="fa-solid fa-star"></i>9.36</div></li>
+                                <li><div class="review">· 참 따뜻하고 익히 아는 음악과함께 옛생각도 나는 고마운 영화입니다</div><div class="reviewscore"><i class="fa-solid fa-star"></i>9.36</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec3Lnormal">
+                        <div class="sec3LnormalL">
+                            <img src="./영화슬라이드/인생은아름다워.jpg" alt="normalposter" class="normalposter">
+                        </div>
+                        <div class="sec3LnormalR">
+                            <div class="reviewtitle">인생은 아름다워<div class="titlescore"><i class="fa-solid fa-star"></i>9.36</div></div>
+                        </div>
+                    </div>
+                    <div class="sec3Lnormal">
+                        <div class="sec3LnormalL">
+                            <img src="./영화슬라이드/인생은아름다워.jpg" alt="normalposter" class="normalposter">
+                        </div>
+                        <div class="sec3LnormalR">
+                            <div class="reviewtitle">인생은 아름다워<div class="titlescore"><i class="fa-solid fa-star"></i>9.36</div></div>
+                        </div>
+                    </div>
+                    <div class="sec3Lnormal">
+                        <div class="sec3LnormalL">
+                            <img src="./영화슬라이드/인생은아름다워.jpg" alt="normalposter" class="normalposter">
+                        </div>
+                        <div class="sec3LnormalR">
+                            <div class="reviewtitle">인생은 아름다워<div class="titlescore"><i class="fa-solid fa-star"></i>9.36</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec3R">
+                    <h1>영화뉴스</h1>
+                    <div class="sec3Rinner">
+                        <div class="sec3RL">
+                            <div class="newstitle">[공식] 이정은 '오마주' 통해 런던아시아영화제 최고배우상 수상 '쾌거'</div><br><div class="date">2022.10.21 | 스포츠조선</div>
+                        </div>
+                        <div class="sec3RR">
+                            <img src="./뉴스/뉴스1.jfif" alt="newsimage" class="newsimage">
+                        </div>
+                    </div>
+                    <div class="sec3Rinner">
+                        <div class="sec3RL">
+                            <div class="newstitle">[공식] 이정은 '오마주' 통해 런던아시아영화제 최고배우상 수상 '쾌거'</div><br><div class="date">2022.10.21 | 스포츠조선</div>
+                        </div>
+                        <div class="sec3RR">
+                            <img src="./뉴스/뉴스1.jfif" alt="newsimage" class="newsimage">
+                        </div>
+                    </div>
+                    <div class="sec3Rinner">
+                        <div class="sec3RL">
+                            <div class="newstitle">[공식] 이정은 '오마주' 통해 런던아시아영화제 최고배우상 수상 '쾌거'</div><br><div class="date">2022.10.21 | 스포츠조선</div>
+                        </div>
+                        <div class="sec3RR">
+                            <img src="./뉴스/뉴스1.jfif" alt="newsimage" class="newsimage">
+                        </div>
+                    </div>
+                    <div class="sec3Rinner">
+                        <div class="sec3RL">
+                            <div class="newstitle">[공식] 이정은 '오마주' 통해 런던아시아영화제 최고배우상 수상 '쾌거'</div><br><div class="date">2022.10.21 | 스포츠조선</div>
+                        </div>
+                        <div class="sec3RR">
+                            <img src="./뉴스/뉴스1.jfif" alt="newsimage" class="newsimage">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec4">
+                <h1>OTT랭킹</h1>
+                <div class="OTTflex">
+                <div class="OTT">
+                    <div class="OTTimage">
+                        <div class="OTTtitle"><img src="./로고/20220518130539129_900_900.png" alt="wavve" class="OTTlogo">영화순위</div>
+                    </div>
+                    <div class="wavvemovietitle">
+                        <div class="OTTmovietitletext"><b>1</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="wavvemovietitle">
+                        <div class="OTTmovietitletext"><b>2</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="wavvemovietitle">
+                        <div class="OTTmovietitletext"><b>3</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="wavvemovietitle">
+                        <div class="OTTmovietitletext"><b>4</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="wavvemovietitle">
+                        <div class="OTTmovietitletext"><b>5</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                </div>
+                <div class="OTT">
+                    <div class="OTTimage">
+                        <div class="OTTtitle"><img src="./로고/왓챠_로고_2021.png" alt="wavve" class="OTTlogo">영화순위</div>
+                    </div>
+                    <div class="watchamovietitle">
+                        <div class="OTTmovietitletext"><b>1</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="watchamovietitle">
+                        <div class="OTTmovietitletext"><b>2</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="watchamovietitle">
+                        <div class="OTTmovietitletext"><b>3</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="watchamovietitle">
+                        <div class="OTTmovietitletext"><b>4</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="watchamovietitle">
+                        <div class="OTTmovietitletext"><b>5</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                </div>
+                <div class="OTT">
+                    <div class="OTTimage">
+                        <div class="OTTtitle"><img src="./로고/티빙.png" alt="wavve" class="OTTlogo">영화순위</div>
+                    </div>
+                    <div class="tvingmovietitle">
+                        <div class="OTTmovietitletext"><b>1</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="tvingmovietitle">
+                        <div class="OTTmovietitletext"><b>2</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="tvingmovietitle">
+                        <div class="OTTmovietitletext"><b>3</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="tvingmovietitle">
+                        <div class="OTTmovietitletext"><b>4</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                    <div class="tvingmovietitle">
+                        <div class="OTTmovietitletext"><b>5</b><img src="./관람가등급/Untitled-1.png" alt="전체이용가" class="OTTgrade">대무가</div><img src="./영화슬라이드/인생은아름다워.jpg" alt="OTTmoive" class="OTTposter">
+                    </div>
+                </div>
+                </div>
             </section>
         </main>
+        <footer>
+            <div class="f1">이용약관 | 개인정보처리방침 | 책임의 한계와 법적고지 | 영화 고객센터</div>
+            <div class="f2">본 컨텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</div>
+            <div class="f3">사업자등록번호 : 220-81-62517 | 통신판매업 신고번호: 경기성남 제 2006 - 692호 | 대표이사: 최수연 | 사업자등록정보 확인</div>
+            <div class="f4">주소 : 경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561 | 대표전화: 1588-3820</div>
+            <div class="f5"><img src="./로고/네이버로고화이트.png" alt="Naver" class="naverL">Copyright<i class="fa-solid fa-copyright"></i><img src="./로고/네이버로고화이트.png" alt="Naver" class="naverS">Corp. ALL Rights Reserved.</div>
+        </footer>
+        <script src="./jquery-3.6.1.min.js"></script>
+        <script src="./NaverMovie.js"></script>
     </body>
 </html>

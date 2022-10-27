@@ -10,114 +10,585 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* outline: 1px solid #FFFFFF; */
 }
 :root{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
 }
 ul,li{ list-style: none; }
-a{ text-decoration: none; }
-body{ min-width: 1280px; 
+body{ min-width: 1200px; 
     background: #202020;}
-.inner{
-    width: 1200px;
-    margin: 0 auto;
-}
 nav{
     width: 100%;
-    height: 80px;
-    position: relative;
-}
-nav > .inner{
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-nav .inner .logo{
-    width: 251px;
-    height: 42px;
-    cursor: pointer;
-}
-nav > .inner ul.gnb{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    padding: 0 0 0 120px;
-    gap: 50px;
-}
-nav > .inner ul.gnb > li{
-    color: #fff;
-    font-size: 25px;
-    font-weight: 320;
-    margin: 0 20px;
-}
-nav > .inner ul.gnb > li:hover{
-    color: #03FC5D;
-    cursor: pointer;
-}
-nav > .inner ul.gnb > li:nth-child(1){
-    color: #03FC5D;
-}
-/* snb */
-nav .snb{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 0px;
+    position: fixed;
+    height: 78px;
+    z-index: 50000;
+    border-bottom: 1px solid #03FC5D;
     overflow: hidden;
+    background: rgba(0,0,0,0.9);
 }
-nav:hover .snb{
-    background: rgba(32,32,32,0.95);
-    height: 145px;
-    transition: height 0.5s;
-}
-nav .snb > .inner{
-    position: relative;
+.nav{
+    width: 1200px;
+    height: 78px;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    color: #FFF;
+    color: white;
+    align-items: center;
+    gap: 80px;
 }
-
-nav .snb > .inner ul{
-    width: 120px;
-    margin: 20px 0 0 0;
-    font-size: 20px;
-    font-weight: 100;
+.inner{
+    width: 100%;
+    margin: 0 auto;
+    gap: 80px;;
 }
-nav .snb > .inner ul:nth-child(4){
-    margin: 20px 55px 0 62px;
+.navtitle{
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 0 0;
 }
-nav .snb > .inner ul:nth-child(3){
-    margin: 20px 0px 0 85px;
+.logo{
+    width: 250px;
+    height: 50px;
 }
-nav .snb > .inner ul:nth-child(2){
-    margin: 20px 0px 0 43px;
-}
-nav .snb > .inner ul:first-child{
-    margin: 20px 10px 0 0 ;
-}
-nav .snb > .inner ul li{
-    height: 36px;
-    line-height: 36px;
+.navsub{
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    display:flex;
+    justify-content:flex-end;
     text-align: center;
+    color: white;
+    font-size: 18px;
+    gap: 120px;
 }
-nav .snb > .inner ul li:hover{
-    color:#03FC5D;
+.sub4{
+    margin: 0 4px 0 25px;
+}
+.sub2{
+    margin: 0 54px 0 11px;
+}
+.navsub ul{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navsub ul li:hover{
+    color: #03FC5D;
+    transition: 0.3s;
+    cursor: pointer;
+}
+nav:hover{
+    height: 220px;
+    transition: 0.5s;
+}
+.navtitle li:hover{
+    color: #03FC5D;
+    transition: 0.3s;
     cursor: pointer;
 }
 main{
     width: 1200px;
-    margin: 0 auto;
     height: 100%;
-    flex-flow: column nowrap;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
 }
 
-main section{
+main .sec1 h1{
+    font-size: 30px;
+}
+main .sec1 .ranking{
     display: flex;
+    gap: 30px;
+    padding: 0 0 30px 0;
+}
+main h1{
+    color: white;
+    padding: 15px 0 10px 0;
+}
+.poster{
+    width: 600px;
+    height: 750px;
+    float: left;
+}
+main .sec1 ul li{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #03FC5D;
+    width: 570px;
+    height: 75px;
+    color: white;
+    font-size: 25px;
+    justify-content:flex-start;
+    align-items: center;
+    z-index: 0;
+}
+.grade{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 20px;
+}
+main .sec1 ul li b{
+    padding: 0 25px 0 25px;
+    font-size: 35px;
+}
+main .sec1 ul li:nth-child(10) b{
+    padding: 0 15px 0 15px;
+}
+.sec1 ul li .fa-solid{
+    color: red;
+    float:right;
+}
+.sec1 ul li .up{
+    position:absolute;
+    right: 0px;
+    font-size: 23px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec1 .fa-solid{
+    font-size: 18px;
+}
+.movie1score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.movie2score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.movie3score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.movie4score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.movie5score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.sec2 .tosmallposter1{
+    position: relative;
+    width: 195px;
+    height: 275px;
+    z-index: 40;
+}
+
+
+.sec2 .tosmallposter2{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .tosmallposter3{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .tosmallposter4{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .tosmallposter5{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .exsmallposter5{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .exsmallposter4{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .exsmallposter3{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .exsmallposter2{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .exsmallposter1{
+    width: 195px;
+    height: 275px;
+}
+.sec2 .tomovielist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 40px 70px;
+}
+.sec2 .exmovielist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 40px 70px;
+}
+.sec2 .tomoviecard1{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .tomoviecard2{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .tomoviecard3{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .tomoviecard4{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .tomoviecard5{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .exmoviecard1{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .exmoviecard2{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .exmoviecard3{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .exmoviecard4{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .exmoviecard5{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .fa-solid{
+    color: white;
+    font-size: 40px;
+}
+.sec2 .fa-solid:visited{
+    color: black;
+    transition: 0.7s;
+}
+
+.sec2 .fa-star{
+    color: #ffd700;
+    padding: 0 5px 0 0;
+    font-size: 20px;
+    cursor: auto;
+}
+.sec2 span{
+    padding: 0 0 0 5px; 
+    font-size: 15px;
+    font-weight: 100;
+}
+.sec2 h1{
+    font-size: 30px;
+    margin: 0 0 0 70px;
+}
+.sec3{
+    display: flex;
+    gap: 20px;
+}
+.sec3 h1{
+    font-size: 30px;
+}
+.sec3Lhover{
+    display: flex;
+    gap: 15px;
+    box-sizing: border-box;
+    width: 590px;
+    height: 200px;
+    align-items: center;
+    border-bottom: 1px solid #B0B0B0;
+}
+.sec3 .sec3LhoverL .hoverposter{
+    width: 140px;
+    height: 180px;
+    vertical-align: bottom;
+}
+.reviewtitle{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+    width: 434px;
+    align-items: center;
+}
+.sec3LhoverR .reviewtitle{
+    border-bottom: 1px solid #03FC5D;
+}
+.sec3 .titlescore{
+    font-size: 20px;
+}
+.sec3 .fa-solid{
+    font-size: 20px;
+    color: #ffd700;
+}
+.sec3 .sec3Lhover li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #B0B0B0;
+    box-sizing: border-box;
+    margin: 5px 0 5px 0;
+    width: 435px;
+}
+.sec3 .sec3Lhover li .fa-solid{
+    font-size: 13px;
+}
+.review{
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 380px;
+}
+.sec3 .sec3Lnormal{
+    display: flex;
+    box-sizing: border-box;
+    width: 590px;
+    height: 100px;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #B0B0B0;
+}
+.sec3 .sec3LnormalL .normalposter{
+    width: 140px;
+    height: 80px;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+.sec3RR .newsimage{
+    width: 150px;
+    height: 105px;
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+.sec3Rinner{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    height: 125px;
+    border-bottom: 1px solid #B0B0B0;
+}
+.newstitle{
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 430px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.date{
+    font-size: 14px;
+    color: #B0B0B0;
+}
+.sec4 h1{
+    font-size: 30px;
+}
+.OTT{
+    box-sizing: border-box;
+    width: 390px;
+}
+.OTTlogo{
+    margin: 0 0 0 100px;
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.OTTtitle{
+    color: white;
+    font-size: 25px;
+}
+.OTTimage{
+    padding: 0 0 10px 0;
+}
+.OTTposter{
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 10px 0 0;
+}
+.wavvemovietitle{
+    box-sizing: border-box;
+    width: 390px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    vertical-align: bottom;
+    background-color: #434343;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+}
+.wavvemovietitle:hover{
+    background-color: #0050FF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.watchamovietitle{
+    box-sizing: border-box;
+    width: 390px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    vertical-align: bottom;
+    background-color: #434343;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+}
+.watchamovietitle:hover{
+    background-color: #FF0559;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.tvingmovietitle{
+    box-sizing: border-box;
+    width: 390px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+    vertical-align: bottom;
+    background-color: #434343;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+}
+.tvingmovietitle:hover{
+    background-color: #E62A2A;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sec4 b{
+    padding: 0 15px 0 15px;
+    font-size: 30px;
+}
+.OTTgrade{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+.OTTmovietitletext{
+    display: flex;
+    align-items: center;
+}
+.OTTflex{
+    display:flex;
+    gap: 15px;
+}
+.OTTtitle{
+    display: flex;
+}
+.naverL{
+    width: 100px;
+    height: 20px;
+    margin: 0 5px 0 0;
+}
+.naverS{
+    width: 50px;
+    height: 10px;
+    margin: 0 5px 0 0;
+}
+footer .fa-solid{
+    margin: 0 5px 0 5px;
+}
+footer{
+    padding: 15px 0 0 0;
+    color: white;
+    border-top: 1px solid #03FC5D;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }

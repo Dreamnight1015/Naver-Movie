@@ -1,0 +1,164 @@
+body{
+    min-width: 1024px;
+}
+nav{
+    height: 90px;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    gap: 0;
+    padding: 0 30px 0 30px;
+}
+nav:hover{
+    height: 90px;
+}
+.poster{
+    width: 450px;
+    height: 500px;
+}
+main .sec1 ul li{
+    width: 450px;
+    height: 50px;
+    font-size: 20px;
+}
+main{
+    width: 100%;
+    padding: 80px 0 0 50px;
+}
+main .sec1 ul li b{
+    padding: 0 15px 0 15px;
+    font-size: 25px;
+}
+.grade{
+    width: 25px;
+    height: 25px;
+}
+.sec2 .tosmallposter1{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .tosmallposter2{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .tosmallposter3{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .tosmallposter4{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .tosmallposter5{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .tomovielist{
+    gap: 20px;
+    padding: 0 0 40px 40px;
+}
+.number{
+    font-size: 15px;
+}
+.score{
+    font-size: 15px;
+}
+.sec2 .fa-star{
+    padding: 0;
+    font-size: 15px;
+}
+.sec2 h1{
+    margin: 0 0 0 40px;
+}
+.sec2 .exsmallposter1{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .exsmallposter2{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .exsmallposter3{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .exsmallposter4{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .exsmallposter5{
+    width: 150px;
+    height: 200px;
+}
+.sec2 .exmovielist{
+    gap: 20px;
+    padding: 0 0 40px 40px;
+}
+.sec3Lhover{
+    width: 450px;
+    height: 160px;
+}
+.sec3 .sec3LhoverL .hoverposter{
+    width: 100px;
+    height: 140px;
+}
+.reviewtitle{
+    font-size: 20px;
+    width: 330px;
+}
+.sec3 .fa-solid{
+    font-size: 15px;
+}
+.sec3 .titlescore{
+    font-size: 15px;
+}
+.sec3 .sec3Lhover li{
+    width: 330px;
+}
+.review{
+    width: 270px;
+}
+.sec3 .sec3Lnormal{
+    width: 450px;
+    height: 85px;
+}
+.sec3 .sec3LnormalL .normalposter{
+    width: 100px;
+    height: 65px;
+}
+.newstitle{
+    width: 330px;
+}
+.sec3RR .newsimage{
+    width: 100px;
+    height: 65px;
+}
+.sec3Rinner{
+    height: 103.8px;
+}
+.OTTposter{
+    display: none;
+}
+.wavvemovietitle{
+    width: 300px;
+}
+.watchamovietitle{
+    width: 300px;
+}
+.tvingmovietitle{
+    width: 300px;
+}
+.OTTlogo{
+    margin: 0;
+}
+.OTTimage{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.OTT{
+    width: 300px;
+}
