@@ -1,164 +1,211 @@
-body{
-    min-width: 1024px;
-}
-nav{
-    height: 90px;
-}
-.nav{
+@charset "UTF-8";
+body{ min-width: 320px; }
+.gnb{
     width: 100%;
+    height: 100px;
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo{
+    position: fixed;
+    top: 30px;
+}
+.gnb > ul{
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translate(-200%, 0);
+    transition: all 0.5s;
+    position: relative;
+    z-index: 10;
+    padding: 100px 0 0 0;
+}
+.gnb > ul.on{
+    transform: translate(0%, 0);
+    transition: all 0.5s;
+}
+.gnb >  ul > li{
+    width: 100%;
+    background: #333333;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.gnb >  ul > li > a.on{
+    background-color: rgb(82, 82, 82);
+}
+
+.material-icons{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+.material-icons:hover{
+    cursor: pointer;
+}
+.material-icons:nth-child(2){
+    display: none;
+}
+ 
+main{
+    min-width: 641px;
+    max-width: 768px;
     display: flex;
     flex-direction: column;
-    height: 100px;
-    gap: 0;
-    padding: 0 30px 0 30px;
-}
-nav:hover{
-    height: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 30px 0;
 }
 .poster{
-    width: 450px;
-    height: 500px;
+    width: 330px;
+    height: 450px;
 }
 main .sec1 ul li{
-    width: 450px;
-    height: 50px;
+    width: 330px;
+    height: 45px;
     font-size: 20px;
 }
-main{
-    width: 100%;
-    padding: 80px 0 0 50px;
+main .sec1 ul li p{
+    width: 200px;
 }
-main .sec1 ul li b{
-    padding: 0 15px 0 15px;
-    font-size: 25px;
+main .sec1 ul li:nth-child(1){
+    border-top: 1px solid #03FC5D;
 }
 .grade{
     width: 25px;
     height: 25px;
+    margin: 0 10px;
+}
+main .sec1 ul li b{
+    padding: 0 10px;
+    font-size: 25px;
+}
+main .sec1 ul li:nth-child(10) b{
+    padding: 0 3px;
+}
+.sec1 ul li .up{
+    right: 40px;
+    font-size: 17px;
+}
+.sec1 .fa-solid{
+    font-size: 16px;
 }
 .sec2 .tosmallposter1{
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 250px;
 }
 .sec2 .tosmallposter2{
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 250px;
 }
 .sec2 .tosmallposter3{
-    width: 150px;
-    height: 200px;
-}
-.sec2 .tosmallposter4{
-    width: 150px;
-    height: 200px;
-}
-.sec2 .tosmallposter5{
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 250px;
 }
 .sec2 .tomovielist{
-    gap: 20px;
-    padding: 0 0 40px 40px;
-}
-.number{
-    font-size: 15px;
-}
-.score{
-    font-size: 15px;
-}
-.sec2 .fa-star{
-    padding: 0;
-    font-size: 15px;
-}
-.sec2 h1{
-    margin: 0 0 0 40px;
-}
-.sec2 .exsmallposter1{
-    width: 150px;
-    height: 200px;
-}
-.sec2 .exsmallposter2{
-    width: 150px;
-    height: 200px;
-}
-.sec2 .exsmallposter3{
-    width: 150px;
-    height: 200px;
-}
-.sec2 .exsmallposter4{
-    width: 150px;
-    height: 200px;
-}
-.sec2 .exsmallposter5{
-    width: 150px;
-    height: 200px;
+    padding: 0 0 40px 0;
 }
 .sec2 .exmovielist{
-    gap: 20px;
-    padding: 0 0 40px 40px;
+    padding: 0 0 40px 0;
+}
+.sec2 .tomoviecard1{
+    font-size: 18px;
+}
+.sec2 .tomoviecard2{
+    font-size: 18px;
+}
+.sec2 .tomoviecard3{
+    font-size: 18px;
+}
+.sec2 .exmoviecard1{
+    font-size: 18px;
+}
+.sec2 .exmoviecard2{
+    font-size: 18px;
+}
+.sec2 .exmoviecard3{
+    font-size: 18px;
+}
+.sec2 .fa-star{
+    font-size: 18px;
+    padding: 0;
+}
+.sec2 .tomoviecard5{
+    display: none;
+}
+.sec2 .tomoviecard4{
+    display: none;
+}
+.sec2 h1{
+    margin: 0;
+}
+.sec2 .exmoviecard5{
+    display: none;
+}
+.sec2 .exmoviecard4{
+    display: none;
+}
+.sec2 .exsmallposter1{
+    width: 170px;
+    height: 250px;
+}
+.sec2 .exsmallposter2{
+    width: 170px;
+    height: 250px;
+}
+.sec2 .exsmallposter3{
+    width: 170px;
+    height: 250px;
 }
 .sec3Lhover{
-    width: 450px;
-    height: 160px;
+    width: 330px;
 }
 .sec3 .sec3LhoverL .hoverposter{
     width: 100px;
-    height: 140px;
 }
 .reviewtitle{
+    width: 210px;
     font-size: 20px;
-    width: 330px;
-}
-.sec3 .fa-solid{
-    font-size: 15px;
-}
-.sec3 .titlescore{
-    font-size: 15px;
 }
 .sec3 .sec3Lhover li{
-    width: 330px;
+    width: 210px;
 }
 .review{
-    width: 270px;
+    width: 210px;
+}
+.reviewscore{
+    white-space: nowrap;
 }
 .sec3 .sec3Lnormal{
-    width: 450px;
-    height: 85px;
+    width: 330px;
 }
 .sec3 .sec3LnormalL .normalposter{
     width: 100px;
-    height: 65px;
 }
 .newstitle{
-    width: 330px;
+    width: 210px;
+}
+.sec3Rinner{
+    height: 100px;
 }
 .sec3RR .newsimage{
     width: 100px;
-    height: 65px;
+    height: 80px;
 }
-.sec3Rinner{
-    height: 103.8px;
+.sec3Lnormal:nth-child(4){
+    display:none;
 }
-.OTTposter{
-    display: none;
+.OTTflex{
+    flex-direction: column;
 }
-.wavvemovietitle{
-    width: 300px;
+footer{
+    font-size: 10px;
 }
-.watchamovietitle{
-    width: 300px;
-}
-.tvingmovietitle{
-    width: 300px;
-}
-.OTTlogo{
-    margin: 0;
-}
-.OTTimage{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-.OTT{
-    width: 300px;
+.naverL{
+    width: 70px;
+    height: 15px;
 }
