@@ -91,18 +91,18 @@ main{
     margin: 0 auto;
     padding: 100px 0 0 0;
 }
-
-main .sec1 h1{
+h2{
+    color: white;
     font-size: 30px;
+    padding: 0 0 10px 0;
+}
+.sec4 h2{
+    padding: 30px 0 15px 0;
 }
 main .sec1 .ranking{
     display: flex;
     gap: 30px;
     padding: 0 0 30px 0;
-}
-main h1{
-    color: white;
-    padding: 15px 0 10px 0;
 }
 .poster{
     width: 600px;
@@ -164,16 +164,17 @@ main .sec1 ul li:nth-child(10) b{
     font-size: 23px;
     padding: 0 0 0 5px;
 }
-.post-slider{
+.toslider{
     width:100%;
     margin:0px auto;
     position:relative;
   }
-  .post-slider .silder-title{
+  .toslider .silder-title{
     text-align:center;
-    margin:30px auto;
+    margin:0 auto;
+    font-size: 30px;
   }
-  .post-slider .next{
+  .toslider .next{
     position:absolute;
     top:50%;
     right:30px;
@@ -181,7 +182,7 @@ main .sec1 ul li:nth-child(10) b{
     color:gray;
     cursor: pointer;
   }
-  .post-slider .prev{
+  .toslider .prev{
     position:absolute;
     top:50%;
     left:30px;
@@ -189,206 +190,228 @@ main .sec1 ul li:nth-child(10) b{
     color:gray;
     cursor: pointer;
   }
-  .post-slider .post-wrapper{
-    width:84%;
+  .toslider .towrapper{
+    width:1000px;
     height:400px;
     margin:0px auto;
     padding:10px 0px 10px 0px;
+    overflow: hidden;
   }
-  .post-slider .post-wrapper .post{
+  .toslider .towrapper .post{
+    position: relative;
     width:300px;
-    height:400px;
     margin:0px 10px;
     display:inline-block;
-    background:white;
-    border-radius: 5px;
+    color: white;
   }
-  .post-slider .post-wrapper .post .post-info{
+  .toslider .towrapper .post .post-info{
     font-size:15px;
     height:30%;
     padding-left:10px;
   }
-  .post-slider .post-wrapper .post .slider-image{
+  .toslider .towrapper .post .slider-image{
     width:100%;
     height:300px;
     border-top-left-radius:5px;
     border-top-right-radius:5px;
   }
-.sec2 .exsmallposter5{
-    width: 195px;
-    height: 275px;
-}
-.sec2 .exsmallposter4{
-    width: 195px;
-    height: 275px;
-}
-.sec2 .exsmallposter3{
-    width: 195px;
-    height: 275px;
-}
-.sec2 .exsmallposter2{
-    width: 195px;
-    height: 275px;
-}
-.sec2 .exsmallposter1{
-    width: 195px;
-    height: 275px;
-}
-.sec2 .tomovielist{
+  .toslider .towrapper .post .post-infoall::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-1.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .toslider .towrapper .post .post-info12::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-2.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .toslider .towrapper .post .post-info15::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-3.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .toslider .towrapper .post .post-info18::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-4.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .exslider{
+    width:100%;
+    margin:0px auto;
+    position:relative;
+  }
+  .exslider .silder-title{
+    text-align:center;
+    margin:0 auto;
+    font-size: 30px;
+  }
+  .exslider .next{
+    position:absolute;
+    top:50%;
+    right:30px;
+    font-size:2em;
+    color:gray;
+    cursor: pointer;
+  }
+  .exslider .prev{
+    position:absolute;
+    top:50%;
+    left:30px;
+    font-size:2em;
+    color:gray;
+    cursor: pointer;
+  }
+  .next:hover{
+    color:#03FC5D;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .prev:hover{
+    color:#03FC5D;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .exslider .exwrapper{
+    width:1000px;
+    height:400px;
+    margin:0px auto;
+    padding:10px 0px 10px 0px;
+    overflow: hidden;
+  }
+  .exslider .exwrapper .post{
     position: relative;
-    margin: 0 auto;
-    gap: 20px;
-    padding: 0 0 40px 70px;
-}
-.sec2 .exmovielist{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: 0 0 40px 70px;
-}
-.sec2 .exmoviecard1{
-    display: flex;
-    text-align: center;
+    width:300px;
+    margin:0px 10px;
+    display:inline-block;
     color: white;
-    font-size: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec2 .exmoviecard2{
-    display: flex;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec2 .exmoviecard3{
-    display: flex;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec2 .exmoviecard4{
-    display: flex;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec2 .exmoviecard5{
-    display: flex;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.sec2 .fa-solid{
-    color: white;
-    font-size: 40px;
-}
-.sec2 .fa-solid:visited{
-    color: black;
-    transition: 0.7s;
-}
-
-.sec2 .fa-star{
-    color: #ffd700;
-    padding: 0 5px 0 0;
-    font-size: 20px;
-    cursor: auto;
-}
-.sec2 span{
-    padding: 0 0 0 5px; 
-    font-size: 15px;
-    font-weight: 100;
-}
-.sec2 h1{
-    font-size: 30px;
-    margin: 0 0 0 70px;
-}
-.sec3{
-    display: flex;
-    gap: 20px;
-}
-.sec3 h1{
-    font-size: 30px;
-}
-.sec3Lhover{
-    display: flex;
-    gap: 15px;
+  }
+  .exslider .exwrapper .post .post-info{
+    font-size:15px;
+    height:30%;
+    padding-left:10px;
+  }
+  .exslider .exwrapper .post .slider-image{
+    width:100%;
+    height:300px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+  }
+  .exslider .exwrapper .post .post-infoall::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-1.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .exslider .exwrapper .post .post-info12::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-2.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .exslider .exwrapper .post .post-info15::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-3.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .exslider .exwrapper .post .post-info18::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-4.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .dday{
+    display: block;
     box-sizing: border-box;
-    width: 590px;
-    height: 200px;
-    align-items: center;
-    border-bottom: 1px solid #B0B0B0;
-}
-.sec3 .sec3LhoverL .hoverposter{
-    width: 140px;
-    height: 180px;
-    vertical-align: bottom;
-}
-.reviewtitle{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-size: 25px;
-    box-sizing: border-box;
-    width: 434px;
-    align-items: center;
-}
-.sec3LhoverR .reviewtitle{
-    border-bottom: 1px solid #03FC5D;
-}
-.sec3 .titlescore{
-    font-size: 20px;
-}
-.sec3 .fa-solid{
-    font-size: 20px;
-    color: #ffd700;
-}
-.sec3 .sec3Lhover li{
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    color: #B0B0B0;
-    box-sizing: border-box;
-    margin: 5px 0 5px 0;
-    width: 435px;
-}
-.sec3 .sec3Lhover li .fa-solid{
-    font-size: 13px;
-}
-.review{
-    box-sizing: border-box;
+    width: 40px;
+    border: 1px solid #FFF;
+    color: #03FC5D;
+    text-align: center;
+    border-radius: 10px;
+  }
+  h4{
     white-space: nowrap;
+    width: 230px;
+    font-size: 20px;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 380px;
-}
-.sec3 .sec3Lnormal{
+    font-weight: 400;
+  }
+  .tograde{
+    position: absolute;
+    top: 3%;
+    left: 24%;
+    width: 30px;
+    height: 30px;
+  }
+  .post-info-bottom{
     display: flex;
-    box-sizing: border-box;
-    width: 590px;
-    height: 100px;
-    align-items: center;
-    gap: 15px;
-    border-bottom: 1px solid #B0B0B0;
-}
-.sec3 .sec3LnormalL .normalposter{
-    width: 140px;
-    height: 80px;
-    vertical-align: bottom;
-    object-fit: cover;
+    font-size: 17px;
+    width: 230px;
+    justify-content: center;
+  }
+  .score::before{
+    content: "\f005";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color:#ffd700;
+    margin: 0 5px 0 0;
+  }
+  .advance::before{
+    content: "예매율";
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0 5px 0 15px;
+  }
+  .sec3{
+    display: flex;
+    gap: 20px;
 }
 
 .sec3RR .newsimage{
@@ -418,9 +441,6 @@ main .sec1 ul li:nth-child(10) b{
 .date{
     font-size: 14px;
     color: #B0B0B0;
-}
-.sec4 h1{
-    font-size: 30px;
 }
 .OTT{
     box-sizing: border-box;
@@ -519,6 +539,7 @@ main .sec1 ul li:nth-child(10) b{
 .OTTflex{
     display:flex;
     gap: 15px;
+    padding: 0 0 10px 0;
 }
 .OTTtitle{
     display: flex;
@@ -537,7 +558,7 @@ footer .fa-solid{
     margin: 0 5px 0 5px;
 }
 footer{
-    padding: 15px 0 0 0;
+    padding: 10px 0 0 0;
     color: white;
     border-top: 1px solid #03FC5D;
 }

@@ -52,10 +52,20 @@ $(document).ready(function(){
     $(".rankinglist li:nth-child(10)").click(function(){
         $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/미시즈.jfif").animate({opacity:1}, 500)
     })
-    $('.post-wrapper').slick({
+    $('.towrapper').slick({
+        rows: 1,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-        nextArrow:$('.next'),
-        prevArrow:$('.prev'),
-      });
+        nextArrow:$('.toslider .next'),
+        prevArrow:$('.toslider .prev')
+    })
+    $('.exwrapper').slick({
+        rows: 1,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        nextArrow:$('.exslider .next'),
+        prevArrow:$('.exslider .prev')
+    });
 });
