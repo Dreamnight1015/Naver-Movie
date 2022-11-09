@@ -68,4 +68,77 @@ $(document).ready(function(){
         nextArrow:$('.exslider .next'),
         prevArrow:$('.exslider .prev')
     });
+    $(".sec3Linner1").mouseenter(function(){
+        $(this).css('height','200px');
+        $('.sec3Linner1 .reviewtitle').css('border-bottom','1px solid #03FC5D');
+        $('.sec3Linner1 .reviewposter').css('height', '180px');
+        $('.sec3Linner1 .sec3LRul').css('display','block');
+        $('.sec3Linner2').css('height','100px');
+        $('.sec3Linner2 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner2 .reviewposter').css('height', '90px');
+        $('.sec3Linner2 .sec3LRul').css('display','none');
+        $('.sec3Linner3').css('height','100px');
+        $('.sec3Linner3 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner3 .reviewposter').css('height', '90px');
+        $('.sec3Linner3 .sec3LRul').css('display','none');
+        $('.sec3Linner4').css('height','100px');
+        $('.sec3Linner4 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner4 .reviewposter').css('height', '90px');
+        $('.sec3Linner4 .sec3LRul').css('display','none');
+    });
+    $(".sec3Linner2").mouseenter(function(){
+        $(this).css('height','200px');
+        $('.sec3Linner2 .reviewtitle').css('border-bottom','1px solid #03FC5D');
+        $('.sec3Linner2 .reviewposter').css('height', '180px');
+        $('.sec3Linner2 .sec3LRul').css('display','block');
+        $('.sec3Linner1').css('height','100px');
+        $('.sec3Linner1 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner1 .reviewposter').css('height', '90px');
+        $('.sec3Linner1 .sec3LRul').css('display','none');
+        $('.sec3Linner3').css('height','100px');
+        $('.sec3Linner3 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner3 .reviewposter').css('height', '90px');
+        $('.sec3Linner3 .sec3LRul').css('display','none');
+        $('.sec3Linner4').css('height','100px');
+        $('.sec3Linner4 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner4 .reviewposter').css('height', '90px');
+        $('.sec3Linner4 .sec3LRul').css('display','none');
+    });
+    $(".sec3Linner3").mouseenter(function(){
+        $(this).css('height','200px');
+        $('.sec3Linner3 .reviewtitle').css('border-bottom','1px solid #03FC5D');
+        $('.sec3Linner3 .reviewposter').css('height', '180px');
+        $('.sec3Linner3 .sec3LRul').css('display','block');
+        $('.sec3Linner1').css('height','100px');
+        $('.sec3Linner1 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner1 .reviewposter').css('height', '90px');
+        $('.sec3Linner1 .sec3LRul').css('display','none');
+        $('.sec3Linner2').css('height','100px');
+        $('.sec3Linner2 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner2 .reviewposter').css('height', '90px');
+        $('.sec3Linner2 .sec3LRul').css('display','none');
+        $('.sec3Linner4').css('height','100px');
+        $('.sec3Linner4 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner4 .reviewposter').css('height', '90px');
+        $('.sec3Linner4 .sec3LRul').css('display','none');
+    });
+    $(".sec3Linner4").mouseenter(function(){
+        $(this).css('height','200px');
+        $('.sec3Linner4 .reviewtitle').css('border-bottom','1px solid #03FC5D');
+        $('.sec3Linner4 .reviewposter').css('height', '180px');
+        $('.sec3Linner4 .sec3LRul').css('display','block');
+        $('.sec3Linner1').css('height','100px');
+        $('.sec3Linner1 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner1 .reviewposter').css('height', '90px');
+        $('.sec3Linner1 .sec3LRul').css('display','none');
+        $('.sec3Linner3').css('height','100px');
+        $('.sec3Linner3 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner3 .reviewposter').css('height', '90px');
+        $('.sec3Linner3 .sec3LRul').css('display','none');
+        $('.sec3Linner2').css('height','100px');
+        $('.sec3Linner2 .reviewtitle').css('border-bottom','0px solid #03FC5D');
+        $('.sec3Linner2 .reviewposter').css('height', '90px');
+        $('.sec3Linner2 .sec3LRul').css('display','none');
+    });
+    
 });
