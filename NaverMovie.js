@@ -23,34 +23,34 @@ $(document).ready(function(){
         $(".gnb > ul").toggleClass('on');
     });
     $(".rankinglist li:nth-child(1)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/블랙팬서와칸다포에버.jpg").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","url(./영화슬라이드/블랙팬서와칸다포에버.jpg)").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(2)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/자백.jpg").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","url(./영화슬라이드/자백.jpg)").animate({opacity:1}, 500)  
     })
     $(".rankinglist li:nth-child(3)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","../영화슬라이드/리멤버.jfif").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/리멤버.jfif").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(4)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/에브리씽.jfif").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/에브리씽.jfif").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(5)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/블랙아담.jpg").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/블랙아담.jpg").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(6)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/동감(2022).jfif").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/동감(2022).jfif").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(7)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/고속도로가족.jfif").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/고속도로가족.jfif").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(8)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/짱구는못말려.jpg").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/짱구는못말려.jpg").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(9)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/인생은아름다워.jpg").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/인생은아름다워.jpg").animate({opacity:1}, 500)
     })
     $(".rankinglist li:nth-child(10)").click(function(){
-        $(".poster").css('opacity','0.5').stop().attr("src","./영화슬라이드/미시즈.jfif").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0.5').stop().attr("background","./영화슬라이드/미시즈.jfif").animate({opacity:1}, 500)
     })
     $('.towrapper').slick({
         rows: 1,
@@ -140,5 +140,16 @@ $(document).ready(function(){
         $('.sec3Linner2 .reviewposter').css('height', '90px');
         $('.sec3Linner2 .sec3LRul').css('display','none');
     });
-    
+    $('.poster1, .info1').mouseenter(function(){
+        $('.info1').css('display','block');
+    })
+    $('.poster1, .info1').mouseleave(function(){
+        $('.info1').css('display','none');
+    })
+    $('.poster2, .info2').mouseenter(function(){
+        $('.info2').css('display','block');
+    })
+    $('.poster2, .info2').mouseleave(function(){
+        $('.info2').css('display','none');
+    })
 });
