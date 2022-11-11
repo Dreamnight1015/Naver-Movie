@@ -114,9 +114,10 @@ main .sec1 .ranking{
 .poster{
   width: 600px;
   height: 750px;
-  background: url(./영화슬라이드/블랙팬서와칸다포에버.jpg) 0 0 no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url(./영화슬라이드/블랙팬서와칸다포에버.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 600px 750px;
 }
 .info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10{
   position: absolute;
