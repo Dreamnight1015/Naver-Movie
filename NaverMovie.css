@@ -106,10 +106,18 @@ main .sec1 .ranking{
     gap: 30px;
     padding: 0 0 30px 0;
 }
-.ranking img[class^=poster]{
-    width: 600px;
-    height: 750px;
-    float: left;
+.mainposter{
+  width: 600px;
+  height: 750px;
+  display: flex;
+}
+.poster1th:hover ~ .info1{
+  width: 570px;
+  height: 730px;
+}
+.poster2th:hover ~ .info2{
+  width: 570px;
+  height: 730px;
 }
 .poster{
   width: 600px;
@@ -123,9 +131,9 @@ main .sec1 .ranking{
   position: absolute;
   color: #fff;
   margin: 20px 0 0 30px;
-  width: 550px;
-  height: 680px;
-  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 .infotitle{
   display: flex;

@@ -24,33 +24,53 @@ $(document).ready(function(){
     });
     $(".rankinglist li:nth-child(1)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/블랙팬서와칸다포에버.jpg)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster1th")
     })
     $(".rankinglist li:nth-child(2)").click(function(){
-        $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/자백.jpg)").animate({opacity:1}, 500)  
+        $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/자백.jpg)").animate({opacity:1}, 500)
+        $(".mainoster").addClass("poster2th")  
     })
     $(".rankinglist li:nth-child(3)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/리멤버.jfif)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster3th")
     })
     $(".rankinglist li:nth-child(4)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/에브리씽.jfif)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster4th")
     })
     $(".rankinglist li:nth-child(5)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/블랙아담.jpg)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster5th")
     })
     $(".rankinglist li:nth-child(6)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/동감.jfif)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster6th")
     })
     $(".rankinglist li:nth-child(7)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/고속도로가족.jfif)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster7th")
     })
     $(".rankinglist li:nth-child(8)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/짱구는못말려.jpg)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster8th")
     })
     $(".rankinglist li:nth-child(9)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/인생은아름다워.jpg)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster9th")
     })
     $(".rankinglist li:nth-child(10)").click(function(){
         $(".poster").css('opacity','0.5').stop().css("background-image","url(./영화슬라이드/미시즈.jfif)").animate({opacity:1}, 500)
+        $(".mainposter").addClass("poster10th")
+    })
+    $(".mainposter").mouseover(function(){
+        $(".poster").css('filter','brightness(50%)');
+        $(".info1").css('width','570px');
+        $(".info1").css('height','730px');
+    })
+    $(".mainposter").mouseout(function(){
+        $(".poster").css('filter','brightness(100%)');
+        $(".info1").css('width','0px');
+        $(".info1").css('height','0px');
     })
     $('.towrapper').slick({
         rows: 1,
