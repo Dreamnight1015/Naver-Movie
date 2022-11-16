@@ -156,6 +156,9 @@ h4{
 .OTTflex{
     flex-direction: column;
 }
+.OTTlogo{
+    margin: 0 0 0 75px;
+}
 footer{
     font-size: 10px;
 }

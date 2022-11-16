@@ -87,7 +87,7 @@ $(document).ready(function(){
         prevArrow:$('.toslider .prev'),
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1025,
                 settings:{
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -113,7 +113,7 @@ $(document).ready(function(){
         prevArrow:$('.exslider .prev'),
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1025,
                 settings:{
                     slidesToShow: 2,
                     slidesToScroll: 2,
