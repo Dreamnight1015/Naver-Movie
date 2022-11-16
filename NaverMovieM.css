@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+body { min-width: 320px; } 
+header{
+    height: 50px;
+}
+.gnb{
+    height: 50px;
+}
+.gnb > ul > li .gnba{
+    height: 50px;
+    line-height: 50px;
+}
+.gnb > ul{
+    padding: 75px 0 0 0;
+}
+.Logo{
+    width: 200px;
+    top: 5px;
+}
+.material-icons{
+    top: 5px;
+    right: 10px;
+}
+.snb > li{
+    height: 30px;
+}
+.snb li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .sec1 .ranking{
+    padding: 0 0 10px 0;
+    gap: 0px;
+}
+h2{
+    font-size: 20px;
+    padding: 0 0 5px 0;
+}
+.mainposter:hover div[class*=info]{
+    width: 0;
+    height: 0;
+}
+.mainposter:hover .poster{
+    filter: brightness(100%);
+}
+main{
+    min-width: 320px;
+    max-width: 425px;
+    padding: 50px 0 0 0;
+}
+main .sec1 ul li{
+    display: none;
+}
+.toslider .next{
+    display: none;
+}
+.toslider .prev{
+    display: none;
+}
+.exslider .next{
+    display: none;
+}
+.exslider .prev{
+    display: none;
+}
+h4{
+    font-size: 16px;
+    width: 90px;
+}
+.toslider .silder-title{
+    font-size: 20px;
+}
+.exslider .silder-title{
+    font-size: 20px;
+}
+.toslider .towrapper{
+    width: 330px;
+    height: 270px;
+    padding: 0;
+}
+.toslider .towrapper .post .slider-image{
+    height: 140px;
+}
+.toslider .towrapper .post .post-infoall::after{
+    left: 125px;
+}
+.toslider .towrapper .post .post-info12::after{
+    left: 125px;
+}
+.toslider .towrapper .post .post-info15::after{
+    left: 125px;
+}
+.toslider .towrapper .post .post-info18::after{
+    left: 125px;
+}
+.post-info-bottom{
+    font-size: 10px;
+    width: 90px;
+}
+.advance::before{
+    font-size: 10px;
+    margin: 0 2px 0 5px;
+}
+.score::before{
+    margin: 0 2px 0 0;
+}
+.post .button{
+    flex-direction: column;
+    gap: 5px;
+}
+.exslider .exwrapper{
+    width: 330px;
+    height: 270px;
+    padding: 0;
+}
+.exslider .exwrapper .post .slider-image{
+    height: 140px;
+}
+.exslider .exwrapper .post .post-infoall::after{
+    left: 125px;
+}
+.exslider .exwrapper .post .post-info12::after{
+    left: 125px;
+}
+.exslider .exwrapper .post .post-info15::after{
+    left: 125px;
+}
+.exslider .exwrapper .post .post-info18::after{
+    left: 125px;
+}
+.dday{
+    padding: 0 4px;
+}
+.sec3Linner1, .sec3Linner2, .sec3Linner3, .sec3Linner4{
+    width: 330px;
+    height: 100px;
+}
+.sec3Linner2, .sec3Linner3, .sec3Linner4{
+    width: 330px;
+    height: 50px;
+}
+.reviewtitle{
+    width: 200px;
+    font-size: 18px;
+    align-items: center;
+    height: 30px;
+}
+.reviewtitle p{
+    width: 150px;
+}
+.sec3LRul li{
+    width: 200px;
+}
+.sec3LRul li:nth-child(3), .sec3LRul li:nth-child(4), .sec3LRul li:nth-child(5){
+    display: none;
+}
+.newstitle{
+    font-size: 16px;
+    width: 200px;
+}
+.sec3RR .newsimage{
+    width: 120px;
+    height: 75px;
+}
+.sec3Rinner{
+    flex-direction: row-reverse;
+}
+.titlescore{
+    font-size: 18px;
+    margin: 0;
+}
+.reviewposter{
+    padding: 0 10px 0 0;
+    height: 80px;
+}
+.sec3Linner2 .reviewposter, .sec3Linner3 .reviewposter, .sec3Linner4 .reviewposter{
+    height: 40px;
+}
+.OTT{
+    width: 330px;
+}
+.wavvemovietitle{
+    width: 330px;
+}
+.watchamovietitle{
+    width: 330px;
+}
+.tvingmovietitle{
+    width: 330px;
+}

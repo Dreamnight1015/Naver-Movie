@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body{ min-width: 320px; }
+body{ min-width: 640px; }
 .gnb{
     width: 100%;
     height: 100px;
@@ -105,110 +105,53 @@ main .sec1 ul li:nth-child(10) b{
 .sec1 .fa-solid{
     font-size: 16px;
 }
-.sec2 .tosmallposter1{
-    width: 170px;
-    height: 250px;
+.toslider .next{
+    right: -40px;
 }
-.sec2 .tosmallposter2{
-    width: 170px;
-    height: 250px;
+.toslider .prev{
+    left:-40px;
+  }
+.toslider .towrapper{
+    width: 550px;
 }
-.sec2 .tosmallposter3{
-    width: 170px;
-    height: 250px;
+h4{
+    width: 255px;
 }
-.sec2 .tomovielist{
-    padding: 0 0 40px 0;
+.toslider .towrapper .post .post-infoall::after{
+    left: 210px;
 }
-.sec2 .exmovielist{
-    padding: 0 0 40px 0;
+.toslider .towrapper .post .post-info12::after{
+    left: 210px;
 }
-.sec2 .tomoviecard1{
-    font-size: 18px;
+.toslider .towrapper .post .post-info15::after{
+    left: 210px;
 }
-.sec2 .tomoviecard2{
-    font-size: 18px;
+.toslider .towrapper .post .post-info18::after{
+    left: 210px;
 }
-.sec2 .tomoviecard3{
-    font-size: 18px;
+.exslider .next{
+    right: -40px;
 }
-.sec2 .exmoviecard1{
-    font-size: 18px;
+.exslider .prev{
+    left:-40px;
+  }
+.exslider .exwrapper{
+    width: 550px;
 }
-.sec2 .exmoviecard2{
-    font-size: 18px;
+.exslider .exwrapper .post .post-infoall::after{
+    left: 210px;
 }
-.sec2 .exmoviecard3{
-    font-size: 18px;
+.exslider .exwrapper .post .post-info12::after{
+    left: 210px;
 }
-.sec2 .fa-star{
-    font-size: 18px;
-    padding: 0;
+.exslider .exwrapper .post .post-info15::after{
+    left: 210px;
 }
-.sec2 .tomoviecard5{
-    display: none;
+.exslider .exwrapper .post .post-info18::after{
+    left: 210px;
 }
-.sec2 .tomoviecard4{
-    display: none;
-}
-.sec2 h1{
-    margin: 0;
-}
-.sec2 .exmoviecard5{
-    display: none;
-}
-.sec2 .exmoviecard4{
-    display: none;
-}
-.sec2 .exsmallposter1{
-    width: 170px;
-    height: 250px;
-}
-.sec2 .exsmallposter2{
-    width: 170px;
-    height: 250px;
-}
-.sec2 .exsmallposter3{
-    width: 170px;
-    height: 250px;
-}
-.sec3Lhover{
-    width: 330px;
-}
-.sec3 .sec3LhoverL .hoverposter{
-    width: 100px;
-}
-.reviewtitle{
-    width: 210px;
-    font-size: 20px;
-}
-.sec3 .sec3Lhover li{
-    width: 210px;
-}
-.review{
-    width: 210px;
-}
-.reviewscore{
-    white-space: nowrap;
-}
-.sec3 .sec3Lnormal{
-    width: 330px;
-}
-.sec3 .sec3LnormalL .normalposter{
-    width: 100px;
-}
-.newstitle{
-    width: 210px;
-}
-.sec3Rinner{
-    height: 100px;
-}
-.sec3RR .newsimage{
-    width: 100px;
-    height: 80px;
-}
-.sec3Lnormal:nth-child(4){
-    display:none;
+.sec3{
+    flex-direction: column;
 }
 .OTTflex{
     flex-direction: column;
