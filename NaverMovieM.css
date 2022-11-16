@@ -52,6 +52,9 @@ h2{
     position: relative;
     overflow:auto;
 }
+.mainmovielist{
+    display: block;
+}
 main .sec1 .ranking{
     display: none;
 }

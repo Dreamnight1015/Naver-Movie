@@ -298,8 +298,15 @@ main .sec1 ul li:nth-child(10) b{
 .post .button2{
   padding: 4px 17px;
 }
-.sec1 .mainmovielist{
+.mainmovielist{
   display: none;
+}
+.th{
+  position: absolute;
+  top: 215px;
+  font-size: 60px;
+  left: 10px;
+  color: rgba(255,255,255,0.9);
 }
 .toslider{
     width:100%;
