@@ -298,6 +298,9 @@ main .sec1 ul li:nth-child(10) b{
 .post .button2{
   padding: 4px 17px;
 }
+.sec1 .mainmovielist{
+  display: none;
+}
 .toslider{
     width:100%;
     margin:0px auto;
@@ -385,6 +388,103 @@ main .sec1 ul li:nth-child(10) b{
     left: 190px;
   }
   .toslider .towrapper .post .post-info18::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-4.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .mainslider{
+    width:100%;
+    margin:0px auto;
+    position:relative;
+  }
+  .mainslider .silder-title{
+    text-align:center;
+    margin:0 auto;
+    font-size: 30px;
+  }
+  .mainslider .next{
+    position:absolute;
+    top:50%;
+    right:30px;
+    font-size:2em;
+    color:gray;
+    cursor: pointer;
+  }
+  .mainslider .prev{
+    position:absolute;
+    top:50%;
+    left:30px;
+    font-size:2em;
+    color:gray;
+    cursor: pointer;
+  }
+  .mainslider .mainwrapper{
+    width:1000px;
+    height:450px;
+    margin:0px auto;
+    padding:10px 0px 10px 0px;
+    overflow: hidden;
+  }
+  .mainslider .mainwrapper .post{
+    position: relative;
+    width:300px;
+    margin:0px 10px;
+    display:inline-block;
+    color: white;
+  }
+  .mainslider .mainwrapper .post .post-info{
+    font-size:15px;
+    height:30%;
+    padding-left:10px;
+  }
+  .mainslider .mainwrapper .post .slider-image{
+    width:100%;
+    height:300px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+  }
+  .mainslider .mainwrapper .post .post-infoall::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-1.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .mainslider .mainwrapper .post .post-info12::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-2.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .mainslider .mainwrapper .post .post-info15::after{
+    content:"";
+    background-image: url("./관람가등급/Untitled-3.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+  }
+  .mainslider .mainwrapper .post .post-info18::after{
     content:"";
     background-image: url("./관람가등급/Untitled-4.png");
     background-size: 30px 30px;

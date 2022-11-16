@@ -78,6 +78,32 @@ $(document).ready(function(){
     $(".button2").mouseover(function(){
         $(this).css('cursor','pointer');
     })
+    $('.mainwrapper').slick({
+        rows: 1,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        nextArrow:$('.mainslider .next'),
+        prevArrow:$('.mainslider .prev'),
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings:{
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings:{
+                    draggable: true,
+                    slidesToShow: 3,
+                    swipeToSlide: true,
+                    arrows: false
+                }
+            }
+        ]
+    });
     $('.towrapper').slick({
         rows: 1,
         arrows: true,

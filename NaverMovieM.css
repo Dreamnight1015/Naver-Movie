@@ -39,11 +39,21 @@ h2{
     padding: 0 0 5px 0;
 }
 .mainposter:hover div[class*=info]{
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
 }
 .mainposter:hover .poster{
     filter: brightness(100%);
+}
+.info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10{
+    position: relative;
+}
+.info1{
+    position: relative;
+    overflow:auto;
+}
+main .sec1 .ranking{
+    display: none;
 }
 main{
     min-width: 320px;
@@ -51,6 +61,12 @@ main{
     padding: 50px 0 0 0;
 }
 main .sec1 ul li{
+    display: noen;
+}
+.mainslider .next{
+    display: none;
+}
+.mainslider .prev{
     display: none;
 }
 .toslider .next{
@@ -69,11 +85,34 @@ h4{
     font-size: 16px;
     width: 90px;
 }
+.mainslider .silder-title{
+    font-size: 20px;
+}
 .toslider .silder-title{
     font-size: 20px;
 }
 .exslider .silder-title{
     font-size: 20px;
+}
+.mainslider .mainwrapper{
+    width: 330px;
+    height: 270px;
+    padding: 0;
+}
+.mainslider .mainwrapper .post .slider-image{
+    height: 140px;
+}
+.mainslider .mainwrapper .post .post-infoall::after{
+    left: 125px;
+}
+.mainslider .mainwrapper .post .post-info12::after{
+    left: 125px;
+}
+.mainslider .mainwrapper .post .post-info15::after{
+    left: 125px;
+}
+.mainslider .mainwrapper .post .post-info18::after{
+    left: 125px;
 }
 .toslider .towrapper{
     width: 330px;
@@ -109,6 +148,18 @@ h4{
 .post .button{
     flex-direction: column;
     gap: 5px;
+}
+.post .button1{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 3px 17px;
+}
+.post .button2{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 3px 17px;
 }
 .exslider .exwrapper{
     width: 330px;
@@ -225,4 +276,14 @@ h4{
 }
 .sec4 b{
     font-size: 20px;
+}
+.sec1{
+    display:none;
+}
+.th{
+    position: absolute;
+    top: 95px;
+    font-size: 30px;
+    left: 10px;
+    color: rgba(255,255,255,0.9);
 }
