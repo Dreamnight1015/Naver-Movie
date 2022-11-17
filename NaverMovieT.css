@@ -204,12 +204,6 @@ h4{
 .sec3{
     flex-direction: column;
 }
-.OTTflex{
-    flex-direction: column;
-}
-.OTTlogo{
-    margin: 0 0 0 75px;
-}
 footer{
     font-size: 10px;
 }
@@ -223,4 +217,13 @@ footer{
     font-size: 60px;
     left: 10px;
     color: rgba(255,255,255,0.9);
+}
+.ottslider .ottwrapper{
+    width: 590px;
+}
+.ottslider .next{
+    display: none;
+}
+.ottslider .prev{
+    display: none;
 }

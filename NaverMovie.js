@@ -311,29 +311,26 @@ $(document).ready(function(){
     }
     $('.ottwrapper').slick({
         rows: 1,
-        arrows: false,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        nextArrow:$('.ottslider .next'),
-        prevArrow:$('.ottslider .prev'),
         infinite: false,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1025,
                 settings:{
                     infinite: true,
-                    arrows: true,
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: true       
                 }
             },
             {
                 breakpoint: 640,
                 settings:{
                     infinite: true,
-                    arrows: true,
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: true
                 }
             }
         ]

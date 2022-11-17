@@ -330,3 +330,24 @@ h4{
     left: 10px;
     color: rgba(255,255,255,0.9);
 }
+.ottslider .ottwrapper{
+    width: 330px;
+}
+.ottranking{
+    margin: 20px 0 0 0;
+}
+.wavvemovietitle{
+    height: 50px;
+}
+.watchamovietitle{
+    height: 50px;
+}
+.tvingmovietitle{
+    height: 50px;
+}
+.ottslider{
+    height: 450px;
+}
+.ottposter{
+    height: 40px;
+}
