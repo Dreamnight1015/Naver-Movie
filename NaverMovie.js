@@ -307,5 +307,36 @@ $(document).ready(function(){
             $('.sec3Linner1 .reviewposter').css('height', '40px');
             $('.sec3Linner1 .sec3LRul').css('display','none');
         });
+        
     }
+    $('.ottwrapper').slick({
+        rows: 1,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow:$('.ottslider .next'),
+        prevArrow:$('.ottslider .prev'),
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings:{
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 640,
+                settings:{
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    
 });

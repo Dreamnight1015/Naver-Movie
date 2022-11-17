@@ -122,9 +122,13 @@ main{
 .button2{
     padding: 4px 17px;
 }
+main .sec1 ul{
+    height: 450px;
+    overflow: auto;
+}
 main .sec1 ul li{
     width: 330px;
-    height: 45px;
+    height: 75px;
     font-size: 20px;
 }
 main .sec1 ul li p{
