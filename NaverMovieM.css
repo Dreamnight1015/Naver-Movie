@@ -64,7 +64,7 @@ main{
     padding: 50px 0 0 0;
 }
 main .sec1 ul li{
-    display: noen;
+    display: none;
 }
 .mainslider .next{
     display: none;
@@ -137,9 +137,98 @@ h4{
 .toslider .towrapper .post .post-info18::after{
     left: 125px;
 }
+.mainmovielist .post-info-bottom{
+    flex-direction: column;
+    font-size: 10px;
+    width: 90px;
+}
 .post-info-bottom{
     font-size: 10px;
     width: 90px;
+}
+.mainslider .mainwrapper .post .post-infoall::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.mainslider .mainwrapper .post .post-info12::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.mainslider .mainwrapper .post .post-info15::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.mainslider .mainwrapper .post .post-info18::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.toslider .towrapper .post .post-infoall::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.toslider .towrapper .post .post-info12::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.toslider .towrapper .post .post-info15::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.toslider .towrapper .post .post-info18::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.exslider .exwrapper .post .post-infoall::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.exslider .exwrapper .post .post-info12::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.exslider .exwrapper .post .post-info15::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
+}
+.exslider .exwrapper .post .post-info18::after{
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 70px;
 }
 .advance::before{
     font-size: 10px;
@@ -171,18 +260,6 @@ h4{
 }
 .exslider .exwrapper .post .slider-image{
     height: 140px;
-}
-.exslider .exwrapper .post .post-infoall::after{
-    left: 125px;
-}
-.exslider .exwrapper .post .post-info12::after{
-    left: 125px;
-}
-.exslider .exwrapper .post .post-info15::after{
-    left: 125px;
-}
-.exslider .exwrapper .post .post-info18::after{
-    left: 125px;
 }
 .dday{
     padding: 0 4px;
