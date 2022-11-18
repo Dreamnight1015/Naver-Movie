@@ -779,7 +779,7 @@ footer .fa-solid{
 }
 footer{
   background-color: #111111;
-    padding: 10px 0 0 0;
+    padding: 10px 0;
     color: white;
     border-top: 1px solid #03FC5D;
 }
@@ -787,7 +787,7 @@ footer div{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
 }
 .ottranking{
   width: 100%;

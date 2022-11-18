@@ -34,6 +34,9 @@ body{ min-width: 640px; }
 .gnb >  ul > li > a.on{
     background-color: rgb(82, 82, 82);
 }
+.gnb > ul > li > .gnba{
+    width: 100%;
+}
 
 .material-icons{
     display: block;
