@@ -23,52 +23,52 @@ $(document).ready(function(){
         $(".gnb > ul").toggleClass('on');
     });
     $(".rankinglist li:nth-child(1)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/블랙팬서와칸다포에버.jpg)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/올빼미.jfif)").animate({opacity:1}, 500)
         $(".info1").css("display",'block');
         $(".info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(2)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/자백.jpg)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/압꾸정.jpg)").animate({opacity:1}, 500)
         $(".info2").css("display",'block');
         $(".info1, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(3)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/리멤버.jfif)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/탄생.jpg)").animate({opacity:1}, 500)
         $(".info3").css("display",'block');
         $(".info1, .info2, .info4, .info5, .info6, .info7, .info8, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(4)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/에브리씽.jfif)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/엔시티.jpg)").animate({opacity:1}, 500)
         $(".info4").css("display",'block');
         $(".info1, .info2, .info3, .info5, .info6, .info7, .info8, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(5)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/블랙아담.jpg)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/뽀로로.jpg)").animate({opacity:1}, 500)
         $(".info5").css("display",'block');
         $(".info1, .info2, .info3, .info4, .info6, .info7, .info8, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(6)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/동감.jfif)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/원피스.jpg)").animate({opacity:1}, 500)
         $(".info6").css("display",'block');
         $(".info1, .info2, .info3, .info4, .info5, .info7, .info8, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(7)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/고속도로가족.jfif)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/오늘밤.jpg)").animate({opacity:1}, 500)
         $(".info7").css("display",'block');
         $(".info1, .info2, .info3, .info4, .info5, .info6, .info8, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(8)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/짱구는못말려.jpg)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/블랙팬서와칸다포에버.jpg)").animate({opacity:1}, 500)
         $(".info8").css("display",'block');
         $(".info1, .info2, .info3, .info4, .info5, .info6, .info7, .info9, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(9)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/인생은아름다워.jpg)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/본즈앤올.jpg)").animate({opacity:1}, 500)
         $(".info9").css("display",'block');
         $(".info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info10").css("display",'none');
     })
     $(".rankinglist li:nth-child(10)").click(function(){
-        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/미시즈.jfif)").animate({opacity:1}, 500)
+        $(".poster").css('opacity','0').stop().css("background-image","url(./영화슬라이드/데시벨.jfif)").animate({opacity:1}, 500)
         $(".info10").css("display",'block');
         $(".info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9").css("display",'none');
     })
